@@ -2,16 +2,17 @@ package loops;
 
 public class Loop {
     public static void main(String[] args) {
+        final int MAX_COUNT = 10;
         // Loop for
         //for( int i = 1; i <= 5; i = i + 2 ) {
-        for( int i = 2; i <= 5; i+=2 ) {
-            System.out.println("Value: " + i);
+        for( int CurrentName = 2; CurrentName <= MAX_COUNT; CurrentName+=2 ) {
+            System.out.println("Value: " + CurrentName);
         }
 
         int counter = 0;
         int acumulator = 0;
         // Loop while
-        while (counter < 5) {
+        while (counter < MAX_COUNT) {
             System.out.println("Counter: " + counter);
             acumulator = acumulator + counter;
             counter++;
@@ -23,6 +24,6 @@ public class Loop {
         do{
             System.out.println("Counter2 :" + counter2);
             counter2++;
-        } while (counter2 < 5);
+        } while (counter2 < MAX_COUNT);
     }
 }
