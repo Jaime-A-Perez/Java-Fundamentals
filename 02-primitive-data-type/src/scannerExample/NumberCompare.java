@@ -15,15 +15,19 @@ public class NumberCompare {
         int sum = integerA + integerB;
         int subtraction = integerA - integerB;
         int multiplication = integerA * integerB;
-        int division = integerA / integerB;
-        int modulus = integerA % integerB;
+        if (integerA != 0) {
+            int division = integerA / integerB;
+            int modulus = integerA % integerB;
+            System.out.println("The division of " + integerA + " by " + integerB + " is: " + division);
+            System.out.println("The modulus of " + integerA + " and " + integerB + " is: " + modulus);
+        } else {
+            System.out.println("Division and modulus are undefined when the second integer is 0.");
+        }
 
         System.out.println("Integer entered: " + integerB);
         System.out.println("The sum of " + integerA + " and " + integerB + " is: " + sum);
         System.out.println("The subtraction of " + integerA + " and " + integerB + " is: " + subtraction);
         System.out.println("The multiplication of " + integerA + " and " + integerB + " is: " + multiplication);
-        System.out.println("The division of " + integerA + " by " + integerB + " is: " + division);
-        System.out.println("The modulus of " + integerA + " and " + integerB + " is: " + modulus);
 
         if (integerA > integerB) {
             System.out.println( integerA + " in greater than " + integerB);
@@ -31,7 +35,7 @@ public class NumberCompare {
             System.out.println(integerA + " in less than " + integerB);
         }
 
-        System.out.println("The end of app");
+        System.out.println("End of app");
         scanner.close();
     }
 }
