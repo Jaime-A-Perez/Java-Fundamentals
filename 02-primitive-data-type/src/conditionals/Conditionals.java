@@ -4,18 +4,23 @@ public class Conditionals {
     public static void main(String[] args) {
         int age = 17;
         age = 20;
+        double average = 7.5;
+        boolean isAdult = age > 17;
+        boolean hasPassingGrade = average >= 7;
 
+        int day = 3;
 
         // if conditional
-        if (age > 18) {
+        if (isAdult && hasPassingGrade) {
+            System.out.println("The student meets the requirements");
+        }
+        if (isAdult) {
             System.out.println("Over 18 years old");
         } else if (age <= 0) {
             System.out.println("Invalid data");
         } else {
             System.out.println("Under 18 years old");
         }
-
-        int day = 3;
 
         // switch conditional
         switch (day) {
