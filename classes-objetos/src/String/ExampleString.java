@@ -11,5 +11,10 @@ public class ExampleString {
         System.out.println(name3 == name);
         System.out.println(name.toUpperCase());
         System.out.println(name);
+
+        Person person1 = new Person("Mary", "Chaldu");
+
+        System.out.println(person1.toString());
+
     }
 }
